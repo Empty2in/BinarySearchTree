@@ -73,7 +73,7 @@ void deletTest(BinarySearchTree<int>& tree) {
 	std::cout << "\n\nTry delete different elements.";
 	std::cout << "\nDelete unreal key: ";
 	std::cin >> del;
-	tree.deleteKey(del);
+	std::cout << (tree.deleteKey(del) ? "SUCCSSES\n" : "FAILED\n");
 	tree.print(std::cout);
 
 	std::cout << "\nDelete node with 0 child: ";
